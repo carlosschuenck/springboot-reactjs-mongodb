@@ -1,0 +1,13 @@
+spring:
+    data:
+        mongodb:
+            database: contactdb
+            password: admin
+            username: admin
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+
+server:
+    servlet:
+        context-path: /api

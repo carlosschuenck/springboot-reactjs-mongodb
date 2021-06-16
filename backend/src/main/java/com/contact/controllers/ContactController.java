@@ -5,6 +5,7 @@ import com.contact.services.ContactService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Set;
 
@@ -26,12 +27,12 @@ public class ContactController {
     }
 
     @PostMapping
-    public Contact save(Contact contact) {
+    public Contact save(@RequestBody @Valid Contact contact) {
         return contactService.save(contact);
     }
 
     @PutMapping
-    public Contact update(Contact contact) {
+    public Contact update(@RequestBody Contact contact) {
         return contactService.update(contact);
     }
 
