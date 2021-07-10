@@ -15,6 +15,7 @@
 	<description>Project for register contacts</description>
 	<properties>
 		<java.version>11</java.version>
+		<doc.version>1.5.9</doc.version>
 	</properties>
 
 	<dependencies>
@@ -67,14 +68,22 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.9</version>
+			<version>${doc.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-hateoas</artifactId>
-			<version>1.5.9</version>
+			<version>${doc.version}</version>
 		</dependency>
+
+		<!-- Converter -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.4.4</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
